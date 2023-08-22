@@ -1,16 +1,17 @@
-import "bootstrap/dist/css/bootstrap.css";
-import "./app/assets/sass/bootstrap.scss";
-import "bootstrap/dist/js/bootstrap.bundle";
-import "./app/assets/sass/ui.scss";
-import "./app/assets/sass/responsive.scss";
-import "./app/assets/sass/_variables-custom.scss";
-import "./app/assets/js/script.js";
-import Home from "./app/home";
+import { BrowserRouter } from "react-router-dom";
+import Footer from "./app/layout/footer";
+import Header from "./app/layout/header";
+import Main from "./app/layout/main";
+
+
 function App() {
   return (
-    <>
-      <Home />
-    </>
+    <BrowserRouter>
+  <Header />
+  <Main />
+  <Footer />
+  </BrowserRouter>
+
   );
 }
 
